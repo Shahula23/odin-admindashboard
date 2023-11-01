@@ -1,0 +1,253 @@
+@font-face {
+    font-family: roboto;
+    src: url('roboto.otf'); 
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+} 
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 230px auto;
+    grid-template-rows: 140px auto;
+}
+
+.siderbar-img {
+    filter: invert(99%) sepia(5%) saturate(85%) hue-rotate(305deg) brightness(113%) contrast(100%);
+}
+
+.sidebar {
+    background-color: #4DA6FF;
+    max-width: 210px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.sidebar-one {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    bottom: 2%;
+}
+
+.home, .profile, .messages, .history, .tasks, .communities {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 10px;
+    line-height: 50%;
+}
+
+.settings, .support, .privacy {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-left: 10px;
+    line-height: 50%;
+}
+
+.settings {
+    padding-top: 25px;
+}
+
+.header {
+    grid-column-start: 2;
+    box-shadow: 0px 2px 4px 0px gray;
+    z-index: 1;
+    display: flex;
+}
+
+.header-left {
+    padding-left: 30px;
+    padding-top: 15px;
+    width: 55%;
+}
+
+.header-top-left {
+    display: grid;
+    grid-template-columns: 20px auto;
+    width: 100%;
+    gap: 10px;
+}
+
+.search {
+    background-color: lightgray;
+    border-radius: 10px;
+    grid-column-end: 3;
+    padding: 10px;
+    min-width: 160px;
+}
+
+.header-user {
+    display: grid;
+    grid-template-columns: 60px auto;
+    gap: 20px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.hi {
+    font-size: 12px;
+    font-weight: bold;
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.user {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    padding-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 125px;
+}
+
+.header-right {
+    padding-left: 30px;
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.header-top-right {
+    display: grid;
+    grid-template-columns: 110px 120px auto;
+}
+
+.bell {
+    justify-self: end;
+}
+
+.account {
+    justify-self: center;
+}
+
+.header-p {
+    margin: 0;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+button {
+    background-color: #4DA6FF;
+    border-radius: 20px;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+}
+
+.main-section {
+    background-color: #E6F2FF;
+}
+
+.main-section {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: flex;
+}
+
+.main-section-left {
+    width: 55vw;
+    max-height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+}
+
+.projects {
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-tile {
+    background-image: linear-gradient(to right, orange 2%, white 2%);
+    background-color: white;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 5px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.project-tile p, .announcements p {
+    margin-top: -15px;
+    color: gray;
+    height: 100px;
+}
+
+.project-tile-imgs {
+    display: flex;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    justify-content: end;
+    gap: 15px;
+}
+
+.main-section-right {
+    max-width: 280px;
+    min-width: 250px;
+    max-height: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+}
+
+.announcements {
+    background-color: white;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+.announcements-one p, .announcements-two p, .announcements-three p {
+    height: 60px;
+}
+
+.trending {
+    background-color: white;
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: -15px;
+}
+
+.trending-one, .trending-two, .trending-three, .trending-four {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: -9.5px;
+}
+
+.trending-one img, .trending-two img, .trending-three img, .trending-four img {
+    align-self: center;
+}
+
+.trending-project-name {
+    color: gray;
+}
+
+.trending p {
+    line-height: 20px;
+}
